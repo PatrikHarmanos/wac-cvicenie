@@ -6,32 +6,32 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface XkabacAmbulanceWlList {
+    interface PatharAmbulanceWlList {
     }
 }
 declare global {
-    interface HTMLXkabacAmbulanceWlListElement extends Components.XkabacAmbulanceWlList, HTMLStencilElement {
+    interface HTMLPatharAmbulanceWlListElement extends Components.PatharAmbulanceWlList, HTMLStencilElement {
     }
-    var HTMLXkabacAmbulanceWlListElement: {
-        prototype: HTMLXkabacAmbulanceWlListElement;
-        new (): HTMLXkabacAmbulanceWlListElement;
+    var HTMLPatharAmbulanceWlListElement: {
+        prototype: HTMLPatharAmbulanceWlListElement;
+        new (): HTMLPatharAmbulanceWlListElement;
     };
     interface HTMLElementTagNameMap {
-        "xkabac-ambulance-wl-list": HTMLXkabacAmbulanceWlListElement;
+        "pathar-ambulance-wl-list": HTMLPatharAmbulanceWlListElement;
     }
 }
 declare namespace LocalJSX {
-    interface XkabacAmbulanceWlList {
+    interface PatharAmbulanceWlList {
     }
     interface IntrinsicElements {
-        "xkabac-ambulance-wl-list": XkabacAmbulanceWlList;
+        "pathar-ambulance-wl-list": PatharAmbulanceWlList;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "xkabac-ambulance-wl-list": LocalJSX.XkabacAmbulanceWlList & JSXBase.HTMLAttributes<HTMLXkabacAmbulanceWlListElement>;
+            "pathar-ambulance-wl-list": LocalJSX.PatharAmbulanceWlList & JSXBase.HTMLAttributes<HTMLPatharAmbulanceWlListElement>;
         }
     }
 }
