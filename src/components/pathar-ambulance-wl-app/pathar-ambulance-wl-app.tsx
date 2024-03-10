@@ -54,13 +54,12 @@ export class PatharAmbulanceWlApp {
     return (
       <Host>
         { element === "editor"
-        ? <pathar-ambulance-wl-editor entry-id={entryId}
+        ? <pathar-ambulance-wl-editor entry-id={entryId} ambulance-id={this.ambulanceId} api-base={this.apiBase}
             oneditor-closed={ () => navigate("./list")} >
           </pathar-ambulance-wl-editor>
           : <pathar-ambulance-wl-list ambulance-id={this.ambulanceId} api-base={this.apiBase} onentry-clicked={ (ev: CustomEvent<string>)=> navigate("./entry/" + ev.detail) }>
           </pathar-ambulance-wl-list>
         }
-
       </Host>
     );
   }
